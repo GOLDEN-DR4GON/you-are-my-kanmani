@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=1.5">
+  <title>✨ kunjaahhh · You are my Kanmani ✨</title>
+  <!-- Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Dancing+Script:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Raleway:wght@300;400;500&family=Quicksand:wght@400;500;600&family=Tangerine:wght@400;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', 'Raleway', 'Montserrat', sans-serif;
+      background: radial-gradient(ellipse at center, #fff0f5, #fce4ec, #f8bbd0);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4) 1px, transparent 1px),
+        radial-gradient(circle at 80% 70%, rgba(255,182,193,0.5) 2px, transparent 2px),
+        radial-gradient(circle at 50% 50%, rgba(255,215,225,0.6) 1px, transparent 1px);
+      background-size: 100px 100px, 150px 150px, 120px 120px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .ultra-premium-card {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1300px;
+      width: 100%;
+      background: rgba(255, 245, 250, 0.35);
+      backdrop-filter: blur(50px);
+      -webkit-backdrop-filter: blur(50px);
+      border-radius: 3rem;
+      box-shadow: 
+        0 50px 100px rgba(255, 105, 135, 0.4),
+        0 0 0 3px rgba(255, 255, 255, 0.8),
+        inset 0 0 80px rgba(255, 220, 230, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.9);
+      overflow: hidden;
+      transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+      animation: cardEntrance 1s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+
+    @keyframes cardEntrance {
+      0% { opacity: 0; transform: scale(0.95) translateY(20px); }
+      100% { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    .left-luxury-panel {
+      flex: 1 1 42%;
+      background: rgba(255, 225, 235, 0.25);
+      backdrop-filter: blur(30px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 2rem;
+      border-right: 2px solid rgba(255, 255, 255, 0.7);
+    }
+
+    .premium-square-frame {
+      width: 250px;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 30px 60px rgba(255, 80, 110, 0.5);
+      border: 3px solid rgba(255, 255, 255, 0.9);
+      outline: 2px solid rgba(255, 182, 193, 0.5);
+      outline-offset: 8px;
+      margin-bottom: 2rem;
+      transition: all 0.4s ease;
+      background-image: url('https://i.ibb.co/4RrzpC2d/Xiao.jpg');
+    }
+
+    .locker-quote-text {
+      font-family: 'Dancing Script', cursive;
+      font-size: 2rem;
+      color: #c94b68;
+      text-shadow: 1px 1px 0 white;
+      background: rgba(255,255,255,0.45);
+      padding: 0.5rem 2rem;
+      border-radius: 2rem;
+      letter-spacing: 1px;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(15px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .right-luxury-panel {
+      flex: 1 1 55%;
+      background: rgba(255, 250, 252, 0.35);
+      backdrop-filter: blur(35px);
+      padding: 3rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pin-heading {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #b3445c;
+      text-shadow: 2px 2px 0 white;
+      margin-bottom: 1.8rem;
+      letter-spacing: 3px;
+      font-style: italic;
+    }
+
+    .pin-display-box {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(25px);
+      border-radius: 3rem;
+      padding: 0.8rem 2.8rem;
+      margin-bottom: 2rem;
+      border: 2px solid white;
+      box-shadow: 0 15px 30px rgba(255, 90, 130, 0.35);
+    }
+
+    .pin-dots-row {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .dot-luxury {
+      width: 20px;
+      height: 20px;
+      background: #ffd0dc;
+      border-radius: 50%;
+      border: 2px solid white;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+    }
+
+    .dot-luxury.filled {
+      background: #ff3b5c;
+      box-shadow: 0 0 20px #ff7b9c;
+      transform: scale(1.15);
+    }
+
+    .numpad-luxury {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.8rem 0 1.5rem;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .num-key-luxury {
+      aspect-ratio: 1 / 1;
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      border: 2px solid white;
+      border-radius: 1.8rem;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: 'Quicksand', sans-serif;
+      color: #b33b52;
+      box-shadow: 0 8px 20px rgba(255, 100, 130, 0.3);
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 1px;
+    }
+
+    .num-key-luxury:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 28px rgba(255, 100, 130, 0.5);
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .num-key-luxury:active {
+      transform: scale(0.94);
+      background: #ffb7c5;
+      color: white;
+    }
+
+    .action-row-luxury {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      max-width: 300px;
+      margin-top: 0.5rem;
+    }
+
+    .action-btn-luxury {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(18px);
+      border: 2px solid white;
+      border-radius: 2.5rem;
+      padding: 0.85rem;
+      font-weight: 700;
+      color: #c94b68;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(255, 95, 125, 0.3);
+      font-size: 0.95rem;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      transition: all 0.3s ease;
+      font-family: 'Quicksand', sans-serif;
+    }
+
+    .action-btn-luxury:hover {
+      background: rgba(255, 255, 255, 0.9);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(255, 95, 125, 0.45);
+    }
+
+    .error-message-luxury {
+      color: #d43f5c;
+      font-weight: 700;
+      margin-top: 1rem;
+      background: rgba(255, 240, 245, 0.85);
+      padding: 0.4rem 2rem;
+      border-radius: 2rem;
+      animation: shake 0.5s ease-out;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      25% { transform: translateX(-6px); }
+      50% { transform: translateX(6px); }
+      75% { transform: translateX(-3px); }
+    }
+
+    .hint-luxury {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.4rem;
+      color: #b35d6f;
+      margin-top: 0.6rem;
+    }
+
+    /* POPUP OVERLAY */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 200, 210, 0.6);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      animation: fadeInOverlay 0.5s ease-out;
+    }
+
+    .popup-overlay.visible {
+      display: flex;
+    }
+
+    @keyframes fadeInOverlay {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .popup-card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(30px);
+      -webkit-backdrop-filter: blur(30px);
+      border-radius: 3rem;
+      padding: 3rem 2.5rem;
+      max-width: 550px;
+      width: 90%;
+      text-align: center;
+      border: 3px solid white;
+      box-shadow: 0 40px 80px rgba(255, 100, 130, 0.5);
+      animation: popupBounce 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    @keyframes popupBounce {
+      0% { transform: scale(0.7); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .popup-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .popup-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #d43f5c;
+      margin-bottom: 1.2rem;
+      text-shadow: 1px 1px 0 white;
+    }
+
+    .popup-message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      color: #b3405c;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    .popup-continue-btn {
+      background: #ff99b0;
+      border: 3px solid white;
+      color: white;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      padding: 0.9rem 3rem;
+      border-radius: 3rem;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(255, 100, 130, 0.5);
+      transition: all 0.3s ease;
+      letter-spacing: 1px;
+    }
+
+    .popup-continue-btn:hover {
+      background: #ff7b9c;
+      transform: translateY(-3px);
+      box-shadow: 0 18px 35px rgba(255, 90, 120, 0.6);
+    }
+
+    /* MAIN INTERFACE */
+    .main-interface-luxury {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem 1.5rem;
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .main-interface-luxury.visible {
+      display: flex;
+    }
+
+    .eyes-big-frame {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 85vh;
+      border-radius: 2rem;
+      box-shadow: 0 30px 60px rgba(255, 70, 110, 0.5);
+      margin: 0 auto 1.5rem auto;
+      display: block;
+      border: 4px solid white;
+      outline: 2px solid rgba(255, 150, 170, 0.5);
+      outline-offset: 8px;
+      transition: all 0.4s ease;
+      object-fit: cover;
+      background: #ffe4f0;
+    }
+
+    .kanmani-badge {
+      font-family: 'Parisienne', 'Great Vibes', cursive;
+      font-size: 3.8rem;
+      color: #d43f5c;
+      text-shadow: 1px 1px 0 white;
+      background: rgba(255,255,255,0.5);
+      backdrop-filter: blur(12px);
+      padding: 0.6rem 3rem;
+      border-radius: 4rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 2px;
+      border: 2px solid white;
+      display: inline-block;
+      white-space: nowrap;
+      line-height: 1.2;
+    }
+
+    .eyes-description-luxury {
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(18px);
+      padding: 1.5rem 2.5rem;
+      border-radius: 2.5rem;
+      margin: 1.2rem 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #b3405c;
+      border: 2px solid white;
+      text-align: center;
+      line-height: 1.7;
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .music-luxury-panel {
+      width: 100%;
+      max-width: 500px;
+      background: rgba(255,250,252,0.55);
+      backdrop-filter: blur(18px);
+      border-radius: 3rem;
+      padding: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .play-btn-luxury {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background: #ff99b0;
+      border: 4px solid white;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
+      box-shadow: 0 10px 25px #ffb1c3;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .play-btn-luxury:hover {
+      background: #ff7b9c;
+      transform: scale(1.08);
+      box-shadow: 0 14px 30px #ff99aa;
+    }
+
+    .play-btn-luxury.playing {
+      background: #ff5e7e;
+    }
+
+    .logout-link-luxury {
+      margin-top: 2rem;
+      background: none;
+      border: none;
+      color: #c94b68;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: underline;
+      font-family: 'Quicksand', sans-serif;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+    }
+
+    .logout-link-luxury:hover {
+      color: #d43f5c;
+    }
+
+    @media (max-width: 780px) {
+      body {
+        padding: 1rem;
+      }
+      .ultra-premium-card {
+        flex-direction: column;
+        border-radius: 2.5rem;
+      }
+      .left-luxury-panel {
+        border-right: none;
+        border-bottom: 2px solid rgba(255,255,255,0.7);
+        padding: 2.5rem 1.5rem;
+      }
+      .premium-square-frame {
+        width: 200px;
+        height: 200px;
+      }
+      .right-luxury-panel {
+        padding: 2.5rem 1.5rem;
+      }
+      .numpad-luxury {
+        gap: 0.8rem;
+      }
+      .num-key-luxury {
+        font-size: 1.7rem;
+        border-radius: 1.5rem;
+      }
+      .popup-card {
+        padding: 2rem 1.5rem;
+      }
+      .popup-title {
+        font-size: 2.5rem;
+      }
+      .popup-message {
+        font-size: 1.2rem;
+      }
+      .eyes-big-frame {
+        max-height: 65vh;
+        border-radius: 1.5rem;
+      }
+      .kanmani-badge {
+        font-size: 2.5rem;
+        padding: 0.5rem 1.8rem;
+        white-space: normal;
+      }
+      .eyes-description-luxury {
+        font-size: 1.1rem;
+        padding: 1.2rem;
+      }
+      .play-btn-luxury {
+        width: 65px;
+        height: 65px;
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- POPUP OVERLAY -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-card">
+      <div class="popup-icon">💌</div>
+      <div class="popup-title">✨ kunjaahhh ✨</div>
+      <div class="popup-message">
+        I created this once again because I can't control when looking at your eyes. 🌙<br>
+        It's not a big thing, but it's a <strong>special one</strong> for me. 💖<br>
+        <span style="font-family:'Great Vibes',cursive; font-size:2rem; display:block; margin-top:0.8rem;">You are my Kanmani</span>
+      </div>
+      <button class="popup-continue-btn" id="popupContinueBtn">
+        <i class="fas fa-heart"></i> Continue <i class="fas fa-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="ultra-premium-card" id="appRoot">
+    <!-- LOCKER SCREEN -->
+    <div id="lockerScreen" style="display: flex; flex-wrap: wrap; width: 100%;">
+      <div class="left-luxury-panel">
+        <div class="premium-square-frame" id="lockerPreview"></div>
+        <div class="locker-quote-text">
+          ✨ kunjaahhh ✨
+        </div>
+      </div>
+
+      <div class="right-luxury-panel">
+        <div class="pin-heading">✦ secret pin ✦</div>
+        <div class="pin-display-box">
+          <div class="pin-dots-row" id="pinDots">
+            <span class="dot-luxury" id="d1"></span>
+            <span class="dot-luxury" id="d2"></span>
+            <span class="dot-luxury" id="d3"></span>
+            <span class="dot-luxury" id="d4"></span>
+          </div>
+        </div>
+
+        <div class="numpad-luxury" id="numpad">
+          <button class="num-key-luxury" data-digit="1">1</button>
+          <button class="num-key-luxury" data-digit="2">2</button>
+          <button class="num-key-luxury" data-digit="3">3</button>
+          <button class="num-key-luxury" data-digit="4">4</button>
+          <button class="num-key-luxury" data-digit="5">5</button>
+          <button class="num-key-luxury" data-digit="6">6</button>
+          <button class="num-key-luxury" data-digit="7">7</button>
+          <button class="num-key-luxury" data-digit="8">8</button>
+          <button class="num-key-luxury" data-digit="9">9</button>
+          <button class="num-key-luxury" data-digit="0">0</button>
+          <button class="num-key-luxury" id="deleteDigitBtn"><i class="fas fa-delete-left"></i></button>
+        </div>
+
+        <div class="action-row-luxury">
+          <button class="action-btn-luxury" id="clearPinBtn"><i class="fas fa-undo"></i> clear</button>
+          <button class="action-btn-luxury" id="unlockBtn"><i class="fas fa-unlock-alt"></i> unlock</button>
+        </div>
+        <div id="pinError" class="error-message-luxury" style="display: none;">❌ wrong pin baby ❌</div>
+        <div class="hint-luxury">hint: 7777</div>
+      </div>
+    </div>
+
+    <!-- MAIN INTERFACE -->
+    <div id="mainInterface" class="main-interface-luxury">
+      <img 
+        src="https://i.ibb.co/fYfwhrhb/4a4b5d4d-a924-41e3-aa75-e986e573fe98.jpg" 
+        alt="Her beautiful eyes kunjaahhh" 
+        class="eyes-big-frame" 
+        id="mainImagePreview"
+      >
+
+      <div class="kanmani-badge">
+        You are my Kanmani
+      </div>
+
+      <div class="eyes-description-luxury">
+        <span style="font-family:'Great Vibes',cursive; font-size:2.5rem; display:block; margin-bottom:0.5rem;">✨ kunjaahhh ✨</span>
+        <span id="dynamicEyeText">
+          Those eyes hold the softness of a thousand pink sunsets 🌙 and the sparkle of every star ever wished upon. When she looks at me, the whole world pauses — deep pools of warmth, flecked with golden honey & wildflowers. 🌸 They crinkle when she laughs, and in that moment, everything feels right. Her gaze is home — pure, tender, endlessly <span style="font-weight:700; color:#d43f5c;">kunjaahhh</span>. 💖
+        </span>
+      </div>
+
+      <div class="music-luxury-panel">
+        <button class="play-btn-luxury" id="playBtn1"><i class="fas fa-play"></i></button>
+      </div>
+
+      <button id="logoutBtn" class="logout-link-luxury"><i class="fas fa-lock"></i> lock again</button>
+    </div>
+  </div>
+
+  <audio id="audio1" preload="auto" src="https://golden-dr4gon.github.io/kanne-kannmaniyee/ReelAudio-6471.mp3"></audio>
+
+  <script>
+    (function() {
+      const CORRECT_PIN = "7777";
+      let currentPin = "";
+      const dots = [document.getElementById('d1'), document.getElementById('d2'), document.getElementById('d3'), document.getElementById('d4')];
+      const pinError = document.getElementById('pinError');
+      const audio = document.getElementById('audio1');
+      const playBtn = document.getElementById('playBtn1');
+      const popupOverlay = document.getElementById('popupOverlay');
+      const popupContinueBtn = document.getElementById('popupContinueBtn');
+      const mainInterface = document.getElementById('mainInterface');
+      const lockerScreen = document.getElementById('lockerScreen');
+      
+      function updateDots() {
+        dots.forEach((dot, idx) => dot.classList.toggle('filled', idx < currentPin.length));
+      }
+
+      function resetPin() {
+        currentPin = "";
+        updateDots();
+        pinError.style.display = 'none';
+      }
+
+      function stopAudio() {
+        audio.pause();
+        audio.currentTime = 0;
+        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        playBtn.classList.remove('playing');
+      }
+
+      function playAudio() {
+        audio.play().then(() => {
+          playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+          playBtn.classList.add('playing');
+        }).catch(() => {
+          console.log('Audio playback requires user interaction first');
+        });
+      }
+
+      function showPopup() {
+        popupOverlay.classList.add('visible');
+      }
+
+      function hidePopupAndShowMain() {
+        popupOverlay.classList.remove('visible');
+        lockerScreen.style.display = 'none';
+        mainInterface.classList.add('visible');
+        setTimeout(() => {
+          playAudio();
+        }, 400);
+      }
+
+      document.querySelectorAll('.num-key-luxury[data-digit]').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          if (currentPin.length < 4) {
+            currentPin += e.currentTarget.getAttribute('data-digit');
+            updateDots();
+            pinError.style.display = 'none';
+          }
+        });
+      });
+
+      document.getElementById('deleteDigitBtn').addEventListener('click', () => {
+        if (currentPin.length > 0) {
+          currentPin = currentPin.slice(0, -1);
+          updateDots();
+          pinError.style.display = 'none';
+        }
+      });
+
+      document.getElementById('clearPinBtn').addEventListener('click', resetPin);
+      
+      document.getElementById('unlockBtn').addEventListener('click', () => {
+        if (currentPin === CORRECT_PIN) {
+          resetPin();
+          showPopup();
+        } else {
+          pinError.style.display = 'block';
+          currentPin = "";
+          updateDots();
+          setTimeout(() => { pinError.style.display = 'none'; }, 2000);
+        }
+      });
+
+      popupContinueBtn.addEventListener('click', hidePopupAndShowMain);
+
+      playBtn.addEventListener('click', () => {
+        if (!audio.paused) {
+          audio.pause();
+          playBtn.innerHTML = '<i class="fas fa-play"></i>';
+          playBtn.classList.remove('playing');
+        } else {
+          playAudio();
+        }
+      });
+
+      audio.addEventListener('ended', () => {
+        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+        playBtn.classList.remove('playing');
+      });
+
+      document.getElementById('logoutBtn').addEventListener('click', () => {
+        stopAudio();
+        mainInterface.classList.remove('visible');
+        lockerScreen.style.display = 'flex';
+        resetPin();
+      });
+
+      mainInterface.classList.remove('visible');
+    })();
+  </script>
+</body>
+</html>
